@@ -1,4 +1,4 @@
-# Fail2Ban + UFW: Panduan Dasar (Ubuntu, SSH Protection)
+# Fail2Ban: Panduan Dasar (Ubuntu, SSH Protection)
 
 ## Apa Itu & Kenapa Pakai?
 
@@ -71,8 +71,8 @@ sudo fail2ban-client status sshd
 
 ## Recheck: UFW vs UFW + Fail2Ban
 
-| Skenario              | UFW Aja           | UFW + Fail2Ban        |
-| --------------------- | ----------------- | --------------------- |
+| Skenario              | UFW               |        Fail2Ban        |
+| --------------------- | ----------------  | ---------------------  |
 | Buka port SSH         | ✅ Siapa pun bisa | ✅ Dipantau otomatis  |
 | Brute force           | ❌ Nggak dicegah  | ✅ Auto ban IP        |
 | Lihat percobaan login | ❌ Nggak bisa     | ✅ Bisa via log       |
